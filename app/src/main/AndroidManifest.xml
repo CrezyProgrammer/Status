@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.facebookfanstatus.facebookfanstatus">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/facebookim"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/facebookim"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.facebookfanstatus.facebookfanstatus.About"></activity>
+        <activity android:name="com.facebookfanstatus.facebookfanstatus.DetailsActivity" />
+        <activity android:name="com.facebookfanstatus.facebookfanstatus.position4" />
+        <activity android:name="com.facebookfanstatus.facebookfanstatus.position3" />
+        <activity android:name="com.facebookfanstatus.facebookfanstatus.position2" />
+        <activity android:name="com.facebookfanstatus.facebookfanstatus.TitleShowActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4725998013444427~9828929033"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3886116d3f7f790754d07ce9323ef522768fe6bf" />
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

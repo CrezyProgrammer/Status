@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@color/colorPrimaryDark"
+  >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="180.0dip"
+        android:layout_width="fill_parent"
+        android:background="@android:color/transparent"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        app:title="ফেসবুক স্ট্যাটাস"
+
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/collpsing_home_page_id"
+        app:scrimAnimationDuration="500"
+        app:contentScrim="#33000000"
+        app:expandedTitleMarginEnd="68.0dip"
+        app:expandedTitleMarginStart="40.0dip"
+        app:layout_scrollFlags="exitUntilCollapsed|scroll"
+        android:fitsSystemWindows="true"
+        >
+
+
+    <ViewFlipper
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/view_fliper_allplayer_id"
+        app:layout_collapseMode="parallax">
+
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@drawable/viewpagerdesign"
+        android:layout_margin="5.0dip">
+
+    <ImageView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fece"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@drawable/viewpagerdesign"
+        android:layout_margin="5.0dip">
+
+    <ImageView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/facebook"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@drawable/viewpagerdesign"
+        android:layout_margin="5.0dip">
+
+    <ImageView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/facebook_engagement"/>
+
+</LinearLayout>
+        <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@drawable/viewpagerdesign"
+        android:layout_margin="5.0dip">
+
+    <ImageView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fe"/>
+
+</LinearLayout>
+
+
+</ViewFlipper>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="?actionBarSize"
+        android:layout_width="fill_parent"
+        android:id="@+id/toolBar_home_page"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/Theme.AppCompat"/>
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/mainlayout"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

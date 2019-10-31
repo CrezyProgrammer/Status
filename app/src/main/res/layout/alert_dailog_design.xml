@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="অ্যাপ থেকে বের হতে চান ?"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+      <LinearLayout
+          android:id="@+id/plyStoreGo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:layout_marginBottom="30dp"
+          >
+
+          <ImageView
+              android:layout_gravity="center"
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/google_playicon"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="৫"
+              android:textSize="18dp"
+              android:textColor="#43C1BD"
+              />
+          <ImageView
+              android:layout_gravity="center"
+              android:layout_width="15dp"
+              android:layout_height="15dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/star"
+              android:layout_marginLeft="8dp"
+              android:layout_marginRight="5dp"
+              />
+          <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="দিন"
+          android:textSize="18dp"
+          android:textColor="#43C1BD"
+          />
+
+      </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="2"
+           android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+              <TextView
+                  android:id="@+id/no"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:text="না"
+                   android:gravity="center"
+                  android:textColor="#43C1BD"
+                  android:layout_weight="1"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                  />
+
+              <TextView
+                  android:id="@+id/yes"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:text="হ্যাঁ"
+                  android:gravity="center"
+                  android:textColor="#43C1BD"
+                  android:layout_weight="1"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                  />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

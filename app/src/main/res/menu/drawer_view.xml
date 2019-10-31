@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+        <menu>
+
+
+        </menu>
+
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navaboutid"
+                    android:title="About" />
+                <item
+                    android:id="@+id/navpolicyid"
+                    android:title="Privacy Policy" />
+                <item
+                    android:id="@+id/navshareid"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/gg"
+                    android:title="On Play Store" />
+                <item
+                    android:id="@+id/navrateapp"
+                    android:title="Rate This App" />
+                <item
+                    android:id="@+id/navupdate"
+                    android:title="Update This App" />
+                <item
+                    android:id="@+id/navmoreapps"
+                    android:title="More apps" />
+            </group>
+        </menu>
+        <item android:title="অ্যাপ এর মধ্যে যা যা থাকছে...">
+<!--        <menu>-->
+<!--            <group android:checkableBehavior="single">-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi1"-->
+<!--                    android:title="" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi2"-->
+<!--                    android:title="ফেসবুক কষ্টের স্ট্যাটাস" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi3"-->
+<!--                    android:title="ফেসবুক ভালোবাসার স্ট্যাটাস" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi4"-->
+<!--                    android:title="ফেসবুক গুড মর্নিং স্ট্যাটাস" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi5"-->
+<!--                    android:title="ফেসবুক রোমান্টিক স্ট্যাটাস" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi6"-->
+<!--                    android:title="ফেসবুক জন্মদিনের স্ট্যাটাস" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi7"-->
+<!--                    android:title="ফেসবুক পূজোর স্ট্যাটাস" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi8"-->
+<!--                    android:title="ফেসবুক সাফল্য স্ট্যাটাস" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi9"-->
+<!--                    android:title="ফেসবুক শীতল স্টাটা" />-->
+<!--                <item-->
+<!--                    android:id="@+id/navposi10"-->
+<!--                    android:title="ফেসবুক ঈদ স্ট্যাটাস" />-->
+<!--            </group>-->
+<!--        </menu>-->
+    </item>
+
+
+</menu>

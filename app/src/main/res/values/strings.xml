@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">ফেসবুক ফানি স্ট্যাটাস</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="banner_ad_unit_id">ca-app-pub-4725998013444427/7904253051</string>
+    <string name="interstial_ad_unit_id">ca-app-pub-4725998013444427/6395089633</string>
+
+
+    <string name="a">ফেসবুক ফানি স্ট্যাটাস পর্ব-1</string>
+    <string name="b">ফেসবুক ফানি স্ট্যাটাস পর্ব-2</string>
+    <string name="c">ফেসবুক ফানি স্ট্যাটাস পর্ব-3</string>
+    <string name="d">ফেসবুক ফানি স্ট্যাটাস পর্ব-4</string>
+    <string name="e">ফেসবুক ফানি স্ট্যাটাস পর্ব-5</string>
+    <string name="f">ফেসবুক ফানি স্ট্যাটাস পর্ব-6</string>
+    <string name="g">ফেসবুক ফানি স্ট্যাটাস পর্ব-7</string>
+    <string name="h">ফেসবুক ফানি স্ট্যাটাস পর্ব-8</string>
+    <string name="i">ভালোবাসার স্ট্যাটাস</string>
+    <string name="j">কষ্টের স্ট্যাটাস</string>
+
+
+
+
+    <string-array name="serialarray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="details">
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+        <item>rairjouputjaupourtjeurjeriufjatrgyhjpw9ugjrwatoghjal;hgnoa;hgnahsno;hasoi;hfnagsohne</item>
+    </string-array>
+
+
+
+
+
+    <string name="Deba">
+
+
+
+
+
+    </string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
+
+
+
+
