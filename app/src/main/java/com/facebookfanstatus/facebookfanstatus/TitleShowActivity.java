@@ -2379,20 +2379,6 @@ public class TitleShowActivity extends AppCompatActivity {
         ArrayList<Smsinformation> arrayList= new ArrayList<Smsinformation>();
 
         arrayList.add(new Smsinformation(1,"1","","\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
-                "→রাজি আছে তো\uD83D\uDE0A\uD83D\uDC49বউ হবা\uD83D\uDC38\uD83D\uDC49এত্ত এত্ত ভালোবাসা দিমু\uD83D\uDE0Dকখনো কষ্ট দিমু না\uD83D\uDE0Cখালি ঝাড়ু দিয়ে পিটামু\uD83D\uDE1C\uD83D\uDE1C\n" +
                 "→রাজি আছে তো\uD83D\uDE0A"));
         arrayList.add(new Smsinformation(2,"2","","কারো পৌষ মাস কারো সর্বনাশ \uD83D\uDE2D\uD83D\uDE2D\n" + "কেউ মিষ্টি খাবে\uD83D\uDE0A - \uD83D\uDE11 কারো অল্প বয়সে বিয়ে হবে\uD83D\uDE15\uD83D\uDE15 - নাইলে রিক্সা ড্রাইভার হবে \uD83D\uDE2D\uD83D\uDE2D"));
         arrayList.add(new Smsinformation(2,"3","","পরিবারের বড় ছেলে \uD83D\uDE2F গুলা ইকটু বঘাটে \uD83D\uDE2Eআর দুষ্ট টাইপের হয় \uD83D\uDE0D\uD83D\uDE18 যেমন আমি\uD83D\uDE2C\uD83D\uDE4C\uD83D\uDE0C এটা নিয়ে ছোটদের \uD83D\uDE32 রাজনীতি করার কিচ্ছু নায়\uD83D\uDE0F"));
