@@ -46,23 +46,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Toolbar mToolbar;
     private CollapsingToolbarLayout mCollapsingToolbar;
     private ViewFlipper viewFlipper;
-    private Button button1,button2,button3,button4,button5,button6,button7,button8,button9,button10;
+
 
     private RecyclerView recyclerViewHome;
 
     private AlertDialog alertDialog;
 
-/*        "ভালোবাসার স্ট্যাটাস",
-                "জন্মদিনের শুভেচ্ছা",
-                "রোমান্টিক স্ট্যাটাস",
-                "ক্ষমা প্রার্থনা",
-                "ভালোবাসা দিবস",
-                "উপদেশ",
-                "ঈদ মোবারক",
-                "মন ভালো নেই",
-                "বোকা বানানোর এসএমএস",
-                "কষ্টের স্ট্যাটাস",
-                "ইসলামিক"*/
+
 
     private String arrayList [] =  {"ফেসবুক ফানি স্ট্যাটাস পর্ব-1","ফেসবুক ফানি স্ট্যাটাস পর্ব-2","ফেসবুক ফানি স্ট্যাটাস পর্ব-3","ফেসবুক ফানি স্ট্যাটাস পর্ব-4","ফেসবুক ফানি স্ট্যাটাস পর্ব-5",
             "ফেসবুক ফানি স্ট্যাটাস পর্ব-6","ফেসবুক ফানি স্ট্যাটাস পর্ব-7","ফেসবুক ফানি স্ট্যাটাস পর্ব-8","ফেসবুক ফানি স্ট্যাটাস পর্ব-9","ফেসবুক ফানি স্ট্যাটাস পর্ব-10"
@@ -150,6 +140,81 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     //we are connected to a network
 
                     String url = "https://play.google.com/store/apps/details?id=com.banglasms.allsms";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                    Toast.makeText(getApplicationContext(), "Please Wait...", Toast.LENGTH_LONG).show();
+                }
+                else
+
+                {
+                    Toast.makeText(getApplicationContext(), "Please Check Internet Connected", Toast.LENGTH_SHORT).show();
+                    // connected = false;
+                }
+            }
+        });
+
+
+        findViewById(R.id.spokenLink).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+                if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+
+                    String url = "https://play.google.com/store/apps/details?id=com.spokenenglish.spokenenglish";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                    Toast.makeText(getApplicationContext(), "Please Wait...", Toast.LENGTH_LONG).show();
+                }
+                else
+
+                {
+                    Toast.makeText(getApplicationContext(), "Please Check Internet Connected", Toast.LENGTH_SHORT).show();
+                    // connected = false;
+                }
+            }
+        });
+
+
+        findViewById(R.id.dhadhaLink).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+                if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+
+                    String url = "https://play.google.com/store/apps/details?id=com.fsit.bangladhadha";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                    Toast.makeText(getApplicationContext(), "Please Wait...", Toast.LENGTH_LONG).show();
+                }
+                else
+
+                {
+                    Toast.makeText(getApplicationContext(), "Please Check Internet Connected", Toast.LENGTH_SHORT).show();
+                    // connected = false;
+                }
+            }
+        });
+
+
+        findViewById(R.id.uktiLink).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+                if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+
+                    String url = "https://play.google.com/store/apps/details?id=com.fsit.ukti_bangla";
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     startActivity(i);
@@ -320,6 +385,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View v)
             {
                 finish();
+                alertDialog.dismiss();
             }
         });
 

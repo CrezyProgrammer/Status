@@ -19,7 +19,6 @@
 
     <com.google.android.material.appbar.CollapsingToolbarLayout
         app:title="ফেসবুক স্ট্যাটাস"
-
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
         android:id="@+id/collpsing_home_page_id"
@@ -67,7 +66,6 @@
         android:src="@drawable/facebook"/>
 
     </LinearLayout>
-
 
 
 

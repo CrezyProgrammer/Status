@@ -41,6 +41,8 @@ public class DetailsActivity extends AppCompatActivity {
     private AdView mAdView;
     private InterstitialAd mInterstitialAd;
 
+    int adsCount = 0;
+
     /**
      * 1
      */
@@ -83,10 +85,8 @@ public class DetailsActivity extends AppCompatActivity {
         details=findViewById(R.id.details_detailsid);
         totalPosition=findViewById(R.id.hh);
 
-        parent=findViewById(R.id.parent);
 
-        copy=findViewById(R.id.copyid);
-        share=findViewById(R.id.shareid);
+        parent=findViewById(R.id.parent);
 
         sms_serial=getIntent().getStringExtra("serial");
         sms_headline=getIntent().getStringExtra("headline");
@@ -94,6 +94,9 @@ public class DetailsActivity extends AppCompatActivity {
         tP=getIntent().getStringExtra("tp");
         positon=getIntent().getIntExtra("position",0);
         category=getIntent().getIntExtra("category",0);
+
+        copy=findViewById(R.id.copyid);
+        share=findViewById(R.id.shareid);
 
         /**
          * 2
@@ -139,6 +142,8 @@ public class DetailsActivity extends AppCompatActivity {
         serial1.setText(sms_serial);
         headline.setText(sms_headline);
         details.setText(sms_details);
+        totalPosition=findViewById(R.id.hh);
+
         totalPosition.setText(tP);
 
         myClipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
@@ -148,6 +153,9 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
+
+
+
                 try {
                     positon++;
                     serial.setText(arrayList.get(positon).getSerial());
@@ -155,6 +163,17 @@ public class DetailsActivity extends AppCompatActivity {
                     headline.setText(arrayList.get(positon).getTitle());
                     details.setText(arrayList.get(positon).getDetails());
                     parent.setVisibility(View.VISIBLE);
+
+
+                    adsCount++;
+
+                    if (adsCount==10)
+                    {
+                        IntersitalAds();
+                        adsCount=0;
+                    }
+
+
                 } catch (Exception e) {
                     e.printStackTrace();
                     positon=0;
@@ -166,6 +185,8 @@ public class DetailsActivity extends AppCompatActivity {
 //                    parent.setVisibility(View.VISIBLE);
 
                 }
+
+
             }
         });
 
@@ -2592,7 +2613,20 @@ public class DetailsActivity extends AppCompatActivity {
                     headline.setText(arrayList.get(positon).getTitle());
                     details.setText(arrayList.get(positon).getDetails());
                     parent.setVisibility(View.VISIBLE);
-                } catch (Exception e) {
+
+
+                    adsCount++;
+
+                    if (adsCount==10)
+                    {
+                        IntersitalAds();
+                        adsCount=0;
+                    }
+
+
+                }
+                catch (Exception e)
+                {
                     e.printStackTrace();
                     positon=0;
                     Log.i("123","error"+e.getMessage());
@@ -2674,7 +2708,13 @@ public class DetailsActivity extends AppCompatActivity {
         /**
          * Intersital
          */
+        IntersitalAds();
 
+    }
+
+
+    public void IntersitalAds()
+    {
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getString(R.string.interstial_ad_unit_id));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
