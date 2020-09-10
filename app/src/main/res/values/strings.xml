@@ -1,13 +1,18 @@
 <resources>
-    <string name="app_name">ফেসবুক ফানি স্ট্যাটাস</string>
+    <string name="app_name">ফানি স্ট্যাটাস</string>
 
     <string name="open">Open</string>
     <string name="close">Close</string>
 
-    <string name="banner_ad_unit_id">ca-app-pub-4725998013444427/7904253051</string>
-    <string name="interstial_ad_unit_id">ca-app-pub-4725998013444427/6395089633</string>
+    <!--
+        test ads code
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+-->
 
 
+    <string name="banner_ad_unit_id">ca-app-pub-3402030962823858/9240086966</string>
+    <string name="interstial_ad_unit_id">ca-app-pub-3402030962823858/5801651783</string>
 
 
     <string name="a">ফেসবুক ফানি স্ট্যাটাস পর্ব-1</string>
@@ -20,8 +25,6 @@
     <string name="h">ফেসবুক ফানি স্ট্যাটাস পর্ব-8</string>
     <string name="i">ভালোবাসার স্ট্যাটাস</string>
     <string name="j">কষ্টের স্ট্যাটাস</string>
-
-
 
 
     <string-array name="serialarray">
@@ -51,9 +54,6 @@
     </string-array>
 
 
-
-
-
     <string name="Deba">
 
 
@@ -61,19 +61,10 @@
 
 
     </string>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>

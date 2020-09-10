@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <androidx.core.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -8,106 +8,153 @@
     android:layout_width="wrap_content"
     android:background="@drawable/n"
     >
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerHomeId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <RelativeLayout
-        android:id="@+id/appsLinkID"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/recyclerHomeId"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#1D2E63"
-        >
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/txt"
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerHomeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/appsLinkID"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/recyclerHomeId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Install This Apps"
-            android:gravity="center"
-            android:textColor="#fff"
-            android:textSize="25dp"
             android:background="#1D2E63"
-            />
-
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             >
 
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Install This Apps"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:background="#1D2E63"
+                />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/l"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/uktiLink"
+                            android:layout_below="@+id/txt"
+                            android:layout_centerInParent="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ukti_icon"
+                            android:background="#1D2E63"
+                            android:layout_marginLeft="14dp"
+                            />
 
 
 
-<LinearLayout
-    android:id="@+id/l"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:layout_marginTop="30dp"
-    >
 
-    <ImageView
-        android:id="@+id/uktiLink"
-        android:layout_below="@+id/txt"
-        android:layout_centerInParent="true"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/ukti_icon"
-        android:background="#1D2E63"
-        />
+                        <ImageView
+                            android:id="@+id/imageLink"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/txt"
+                            android:layout_centerInParent="true"
+                            android:background="#1D2E63"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/home_icon" />
+
+                        <ImageView
+                            android:id="@+id/dhadhaLink"
+                            android:layout_below="@+id/txt"
+                            android:layout_centerInParent="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/dhadha1"
+                            android:background="#1D2E63"
+                            android:layout_marginRight="5dp"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/aa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        >
+                        <ImageView
+                            android:id="@+id/spokenLink"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_below="@+id/txt"
+                            android:layout_centerInParent="true"
+                            android:background="#1D2E63"
+                            android:scaleType="fitXY"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:src="@drawable/spoken" />
+                        <ImageView
+                            android:id="@+id/ssc"
+                            android:layout_below="@+id/txt"
+                            android:layout_centerInParent="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/funny_photo"
+                            android:background="#1D2E63"
+                            android:layout_marginRight="10sp"
+                            android:layout_gravity="center"
+                            />
 
 
 
 
-    <ImageView
-        android:id="@+id/imageLink"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/txt"
-        android:layout_centerInParent="true"
-        android:background="#1D2E63"
-        android:scaleType="fitXY"
-        android:src="@drawable/home_icon" />
+                        <ImageView
+                            android:id="@+id/joks99"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_below="@+id/txt"
+                            android:layout_centerInParent="true"
+                            android:background="#1D2E63"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ss_icon" />
 
-    <ImageView
-        android:id="@+id/dhadhaLink"
-        android:layout_below="@+id/txt"
-        android:layout_centerInParent="true"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/dhadha1"
-        android:background="#1D2E63"
-        android:layout_marginRight="5dp"
-        />
+                    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/spokenLink"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/txt"
-        android:layout_centerInParent="true"
-        android:background="#1D2E63"
-        android:scaleType="fitXY"
-        android:src="@drawable/spoken" />
-</LinearLayout>
+                </LinearLayout>
 
-        </HorizontalScrollView>
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
 
     </RelativeLayout>
-
-
-</RelativeLayout>
 
 </androidx.core.widget.NestedScrollView>

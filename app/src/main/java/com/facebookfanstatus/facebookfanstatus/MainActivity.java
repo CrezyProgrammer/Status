@@ -28,10 +28,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.crashlytics.android.Crashlytics;
-import com.facebookfanstatus.facebookfanstatus.viewpaggerAdaptor.Home_ItemAdapter;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.navigation.NavigationView;
+import com.onesignal.OneSignal;
 
 
 import io.fabric.sdk.android.Fabric;
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
+
     private String arrayList [] =  {"ফেসবুক ফানি স্ট্যাটাস পর্ব-1","ফেসবুক ফানি স্ট্যাটাস পর্ব-2","ফেসবুক ফানি স্ট্যাটাস পর্ব-3","ফেসবুক ফানি স্ট্যাটাস পর্ব-4","ফেসবুক ফানি স্ট্যাটাস পর্ব-5",
             "ফেসবুক ফানি স্ট্যাটাস পর্ব-6","ফেসবুক ফানি স্ট্যাটাস পর্ব-7","ফেসবুক ফানি স্ট্যাটাস পর্ব-8","ফেসবুক ফানি স্ট্যাটাস পর্ব-9","ফেসবুক ফানি স্ট্যাটাস পর্ব-10"
     };
@@ -65,22 +66,42 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
 
-     /*   firebase gmail
-        khusbumuntaha0@gmail.com
-        puse notificaton gmail
-        appspushnotification88@gmail.com
-                debeloper name
-                Ripon*/
+
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
+
+
+
+/*
+      DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("txt");
+
+      databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+          @Override
+          public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+          {
+              String text = dataSnapshot.getValue().toString();
+              Toast.makeText(MainActivity.this, ""+text, Toast.LENGTH_SHORT).show();
+          }
+
+          @Override
+          public void onCancelled(@NonNull DatabaseError databaseError)
+          {
+
+          }
+      });
+
+*/
 
 
         recyclerViewHome = findViewById(R.id.recyclerHomeId);
         recyclerViewHome.setLayoutManager(new LinearLayoutManager(this));
-     Home_ItemAdapter adapter = new Home_ItemAdapter(this,arrayList);
-     recyclerViewHome.setAdapter(adapter);
 
 
 
-                appBarLayout = findViewById(R.id.appbar);
+
+        appBarLayout = findViewById(R.id.appbar);
         mToolbar = (Toolbar) findViewById(R.id.toolBar_home_page);
         setSupportActionBar(mToolbar);
         if (getSupportActionBar()!=null){
@@ -164,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
                     //we are connected to a network
 
-                    String url = "https://play.google.com/store/apps/details?id=com.spokenenglish.spokenenglish";
+                    String url = "https://play.google.com/store/apps/details?id=com.spoken_english_45_days.spoken_english_45_days";
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     startActivity(i);
@@ -230,6 +251,54 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
 
 
+        findViewById(R.id.joks99).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+                if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+
+                    String url = "https://play.google.com/store/apps/details?id=com.fsit.banglaJokes";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                    Toast.makeText(getApplicationContext(), "Please Wait...", Toast.LENGTH_LONG).show();
+                }
+                else
+
+                {
+                    Toast.makeText(getApplicationContext(), "Please Check Internet Connected", Toast.LENGTH_SHORT).show();
+                    // connected = false;
+                }
+            }
+        });
+        findViewById(R.id.ssc).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+                if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+
+                    String url = "https://play.google.com/store/apps/details?id=com.funny.photo_app";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                    Toast.makeText(getApplicationContext(), "Please Wait...", Toast.LENGTH_LONG).show();
+                }
+                else
+
+                {
+                    Toast.makeText(getApplicationContext(), "Please Check Internet Connected", Toast.LENGTH_SHORT).show();
+                    // connected = false;
+                }
+            }
+        });
+
+
     }
 
     private void shareAppLink() {
@@ -278,27 +347,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (id){
 
-                case R.id.navaboutid:
-                     Intent intent=new Intent(getApplicationContext(),About.class);
-                     startActivity(intent);
+            case R.id.navaboutid:
+
                 break;
-                case R.id.navpolicyid:
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/document/d/e/2PACX-1vSN050jYWMCC1ji5ZPIhtLSvQNziXk_Kok547-TvE4mQTDnbsZh3sRhCUThp7-RPeuemKVFikd8Y9Rt/pub")));
+            case R.id.navpolicyid:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://friendsoftwareit.blogspot.com/2020/02/funny-status.html")));
                 break;
-                case R.id.navshareid:
+            case R.id.navshareid:
                 shareAppLink();
                 break;
-                case R.id.navrateapp:
+            case R.id.navrateapp:
 
                 fivestar();
 
                 break;
-                case R.id.navupdate:
+            case R.id.navupdate:
 
                 update();
 
                 break;
-                case R.id.navmoreapps:
+            case R.id.navmoreapps:
 
                 moreapps();
 
@@ -319,13 +387,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.aboutid) {
-            Intent intent=new Intent(getApplicationContext(),About.class);
-            startActivity(intent);
             return true;
         }
 
         if (id == R.id.privacypolicyid) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/document/d/e/2PACX-1vSN050jYWMCC1ji5ZPIhtLSvQNziXk_Kok547-TvE4mQTDnbsZh3sRhCUThp7-RPeuemKVFikd8Y9Rt/pub")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://friendsoftwareit.blogspot.com/2020/02/funny-status.html")));
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -348,7 +414,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setCancelable(false);
+        builder.setCancelable(true);
         ViewGroup viewGroup = findViewById(android.R.id.content);
         View dialogView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.alert_dailog_design, viewGroup, false);
 
@@ -369,7 +435,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 {
                     Toast.makeText(getApplicationContext(), "Please Check Internet Connected", Toast.LENGTH_SHORT).show();
-                   // connected = false;
+                    // connected = false;
                 }
             }
         });
