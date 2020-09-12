@@ -33,6 +33,7 @@ class JokeActivity : AppCompatActivity() {
         getData()
     }
     private fun getData() {
+        Utils.offline.clear()
 
         dbh = Databasehelper(this)
         try {
@@ -42,6 +43,8 @@ class JokeActivity : AppCompatActivity() {
             val cursor = db.rawQuery("Select * from joke where cat_id="+intent.getStringExtra("id"), null)
             if (cursor.moveToFirst()) {
                 do {
+
+                    Log.i("123321","46:"+cursor.getString(2))
 
                   Utils.offline.add(VideoCategory(
                             cursor.getInt(0),

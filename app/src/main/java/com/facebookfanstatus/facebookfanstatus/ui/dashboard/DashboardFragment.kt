@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
@@ -120,7 +121,8 @@ class DashboardFragment : Fragment() {
                         e.printStackTrace()
                     }
                 },
-                Response.ErrorListener { error: VolleyError -> Log.i("123321", "error = $error") }) {
+                Response.ErrorListener { error: VolleyError -> Toast.makeText(activity,"Please check your internet connection",Toast.LENGTH_SHORT).show() }) {
+
             override fun getParams(): Map<String, String> {
                 val params: MutableMap<String, String> = HashMap()
                 params["access_key"] = "6808"
